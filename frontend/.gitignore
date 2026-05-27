@@ -3,3 +3,8 @@ dist
 .env
 .env.local
 .claude
+
+
+.claude
+
+.gitignore

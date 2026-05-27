@@ -1,11 +1,13 @@
 package br.mackenzie.backend.entities;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@Entity
 @Getter
 @Setter
 @AllArgsConstructor
@@ -21,21 +23,4 @@ public class Filme {
     private float notaMedia;
     private String genero;
 
-    public float calcularMedia() {
-        return 0;
-    }
-
-    public void adicionarAvaliacao(Avaliacao avaliacao) {
-
-    }
-
-    public String getInformacoesFilme() {
-
-        return "Titulo: " + titulo + "\n" +
-                "Ano: " + ano + "\n" +
-                "Duração: " + duracao + " minutos\n" +
-                "Sinopse: " + sinopse + "\n" +
-                "Nota Média: " + notaMedia + "\n" +
-                "Gênero: " + genero;
-    }
 }

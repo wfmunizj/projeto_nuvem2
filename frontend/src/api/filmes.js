@@ -1,4 +1,4 @@
-const BASE = '/filmes'
+const BASE = (import.meta.env.VITE_API_BASE_URL || '') + '/filmes'
 
 async function handleResponse(res) {
   if (res.status === 204) return null
