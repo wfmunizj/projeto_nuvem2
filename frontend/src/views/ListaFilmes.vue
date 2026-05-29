@@ -5,7 +5,10 @@
         <h1 class="page-title">🎬 Catálogo de Filmes</h1>
         <p class="page-subtitle">{{ filmes.length }} filme(s) encontrado(s)</p>
       </div>
-      <RouterLink to="/novo" class="btn btn-primary">+ Novo Filme</RouterLink>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <RouterLink to="/relatorio" class="btn btn-ghost">📊 Relatório</RouterLink>
+        <RouterLink to="/novo" class="btn btn-primary">+ Novo Filme</RouterLink>
+      </div>
     </div>
 
     <div class="search-wrap">
